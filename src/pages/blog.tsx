@@ -263,7 +263,7 @@ const BlogPage: NextPage = () => {
 
 export default BlogPage;
 
-// ------------ スタイル設定 ------------
+// ------------ Style settings ------------
 const S_TopTitle = styled.h1`
   font-size: 2.5rem;
   @media (min-width: 768px) {
