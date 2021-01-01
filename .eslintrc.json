@@ -1,0 +1,40 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "sort-imports": ["error", { "ignoreDeclarationSort": true }],
+    "import/order": ["error", { "newlines-between": "always" }],
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "printWidth": 120,
+        "trailingComma": "all",
+        "tabWidth": 2
+      }
+    ],
+    "react/display-name": ["off"],
+    "react/prop-types": ["error", { "skipUndeclared": true }],
+    "@typescript-eslint/explicit-module-boundary-types": ["off"],
+    // "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
+    "no-irregular-whitespace": ["off"]
+  }
+}
