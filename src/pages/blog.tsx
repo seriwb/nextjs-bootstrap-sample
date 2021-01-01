@@ -264,20 +264,6 @@ const BlogPage: NextPage = () => {
 export default BlogPage;
 
 // ------------ スタイル設定 ------------
-interface TagWrapperProps {
-  isInvalid?: boolean,
-  children?: React.ReactNode
-}
-const WrapperDiv = ({ isInvalid, children, ...props }: TagWrapperProps) => (
-  <div {...props}>{children}</div>
-);
-const StyledTagWrapperDiv = styled(WrapperDiv)`
-  border: 1px solid ${props => (props.isInvalid ? '#f44336' : '#ccc')};
-  position: relative;
-  cursor: text;
-`;
-
-
 const S_TopTitle = styled.h1`
   font-size: 2.5rem;
   @media (min-width: 768px) {
