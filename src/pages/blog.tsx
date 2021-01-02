@@ -268,6 +268,7 @@ const S_TopTitle = styled.h1`
   font-size: 2.5rem;
   @media (min-width: 768px) {
     font-size: 3rem;
+  }
 `;
 
 const S_BlogPost = styled.article`
