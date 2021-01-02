@@ -2,6 +2,8 @@
 
 Bootstrap examples implemented in Next.js and styled-components.
 - https://getbootstrap.com/docs/5.0/examples/
+  - [Blog](https://getbootstrap.com/docs/5.0/examples/blog/)
+  - [Dashboard](https://getbootstrap.com/docs/5.0/examples/dashboard/)
 
 ## how to run
 
@@ -11,3 +13,19 @@ yarn dev
 ```
 
 - http://localhost:3000/
+
+
+# memo
+
+## .babelrc
+
+When I execute `yarn dev` and reload it, ```Prop` className` did not match.``` is happend, so I added it as a countermeasure.
+
+- https://github.com/vercel/next.js/issues/7423
+
+## Dashbord topics
+
+Using these npm libraries.
+- react-feather
+- chart.js
+- react-chartjs-2

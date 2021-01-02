@@ -33,7 +33,9 @@ export default function Index() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <a href="https://https://github.com/seriwb/nextjs-bootstrap-samplenextjs.org">Next.js samples with Bootstrap5!</a>
+          <a href="https://https://github.com/seriwb/nextjs-bootstrap-samplenextjs.org">
+            Next.js samples with Bootstrap5!
+          </a>
         </h1>
 
         <p className={styles.description}>
@@ -48,10 +50,12 @@ export default function Index() {
             </a>
           </Link>
 
-          <a href="#" className={styles.card}>
-            <h3>Examples &rarr;</h3>
-            <p></p>
-          </a>
+          <Link href="/dashboard">
+            <a className={styles.card}>
+              <h3>Dashboard Template &rarr;</h3>
+              <p></p>
+            </a>
+          </Link>
 
           <a href="#" className={styles.card}>
             <h3>Examples &rarr;</h3>
