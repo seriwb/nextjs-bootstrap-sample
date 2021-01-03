@@ -1,10 +1,11 @@
 import { Layout } from "../components/layouts/blog";
 import styled from "styled-components";
 import { NextPage } from "next";
+import * as application from "../constants/application";
 
 const BlogPage: NextPage = () => {
   return (
-    <Layout>
+    <Layout title={`Blog Template · ${application.TITLE}`}>
       <div className="p-4 p-md-5 mb-4 text-white rounded bg-dark">
         <div className="col-md-6 px-0">
           <S_TopTitle className="display-4 font-italic">Title of a longer featured blog post</S_TopTitle>
@@ -232,27 +233,57 @@ const BlogPage: NextPage = () => {
           <div className="p-4">
             <h4 className="font-italic">Archives</h4>
             <ol className="list-unstyled mb-0">
-              <li><a href="#">March 2014</a></li>
-              <li><a href="#">February 2014</a></li>
-              <li><a href="#">January 2014</a></li>
-              <li><a href="#">December 2013</a></li>
-              <li><a href="#">November 2013</a></li>
-              <li><a href="#">October 2013</a></li>
-              <li><a href="#">September 2013</a></li>
-              <li><a href="#">August 2013</a></li>
-              <li><a href="#">July 2013</a></li>
-              <li><a href="#">June 2013</a></li>
-              <li><a href="#">May 2013</a></li>
-              <li><a href="#">April 2013</a></li>
+              <li>
+                <a href="#">March 2014</a>
+              </li>
+              <li>
+                <a href="#">February 2014</a>
+              </li>
+              <li>
+                <a href="#">January 2014</a>
+              </li>
+              <li>
+                <a href="#">December 2013</a>
+              </li>
+              <li>
+                <a href="#">November 2013</a>
+              </li>
+              <li>
+                <a href="#">October 2013</a>
+              </li>
+              <li>
+                <a href="#">September 2013</a>
+              </li>
+              <li>
+                <a href="#">August 2013</a>
+              </li>
+              <li>
+                <a href="#">July 2013</a>
+              </li>
+              <li>
+                <a href="#">June 2013</a>
+              </li>
+              <li>
+                <a href="#">May 2013</a>
+              </li>
+              <li>
+                <a href="#">April 2013</a>
+              </li>
             </ol>
           </div>
 
           <div className="p-4">
             <h4 className="font-italic">Elsewhere</h4>
             <ol className="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li>
+                <a href="#">GitHub</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
             </ol>
           </div>
         </div>

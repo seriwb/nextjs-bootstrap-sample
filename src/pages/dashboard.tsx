@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { NextPage } from "next";
 import { Calendar } from "react-feather";
 import { Line } from "react-chartjs-2";
+import * as application from "../constants/application";
 
 const DashboardPage: NextPage = () => {
   const graphData = {
@@ -34,7 +35,7 @@ const DashboardPage: NextPage = () => {
   };
 
   return (
-    <Layout>
+    <Layout title={`Dashboard Template · ${application.TITLE}`}>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 className="h2">Dashboard</h1>
         <div className="btn-toolbar mb-2 mb-md-0">

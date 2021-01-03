@@ -1,15 +1,17 @@
+import * as application from "../../../constants/application";
+
 import { Footer } from "./Footer";
+import { GlobalStyle } from "./Styles";
 import Head from "next/head";
 import { Header } from "./Header";
-import { Sidebar } from "./Sidebar";
 import React from "react";
-import { GlobalStyle } from "./Styles";
+import { Sidebar } from "./Sidebar";
 
 type Props = {
   title?: string;
 };
 
-export const Layout: React.FC<Props> = ({ children, title = "Dashboard Template · Bootstrap v5.0" }) => (
+export const Layout: React.FC<Props> = ({ children, title = application.TITLE }) => (
   <>
     <Head>
       <title>{title}</title>
