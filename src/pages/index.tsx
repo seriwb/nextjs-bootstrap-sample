@@ -57,10 +57,12 @@ export default function Index() {
             </a>
           </Link>
 
-          <a href="#" className={styles.card}>
-            <h3>Examples &rarr;</h3>
-            <p></p>
-          </a>
+          <Link href="/signin">
+            <a className={styles.card}>
+              <h3>Sign-in Template &rarr;</h3>
+              <p></p>
+            </a>
+          </Link>
 
           <a href="#" className={styles.card}>
             <h3>Examples &rarr;</h3>
