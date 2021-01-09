@@ -5,6 +5,7 @@ Bootstrap examples implemented in Next.js and styled-components.
   - [Blog](https://getbootstrap.com/docs/5.0/examples/blog/)
   - [Dashboard](https://getbootstrap.com/docs/5.0/examples/dashboard/)
   - [Sign-in](https://getbootstrap.com/docs/5.0/examples/sign-in/)
+  - [Pricing](https://getbootstrap.com/docs/5.0/examples/pricing/)
 
 ## how to run
 
