@@ -1,8 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export const Header: React.FC = () => {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };

@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 export const Footer: React.FC = () => {
   return (
     <>
       <S_Footer className="blog-footer">
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+          Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by{" "}
+          <a href="https://twitter.com/mdo">@mdo</a>.
+        </p>
         <S_Bottom>
           <a href="#">Back to top</a>
         </S_Bottom>

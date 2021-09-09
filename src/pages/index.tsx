@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
 import { createGlobalStyle } from "styled-components";
+
+import styles from "../styles/Home.module.css";
 
 const GlobalStyle = createGlobalStyle`
   html,

@@ -1,6 +1,7 @@
-import { Layout } from "../components/layouts/pricing";
 import styled from "styled-components";
 import { NextPage } from "next";
+
+import { Layout } from "../components/layouts/pricing";
 import * as application from "../constants/application";
 
 const PricingPage: NextPage = () => {

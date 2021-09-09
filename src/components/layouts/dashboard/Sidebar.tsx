@@ -1,10 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Home, File, ShoppingCart, Users, BarChart2, Layers, PlusCircle, FileText } from "react-feather";
+import React from "react";
+import styled from "styled-components";
+import { BarChart2, File, FileText, Home, Layers, PlusCircle, ShoppingCart, Users } from "react-feather";
 
-export const Sidebar: React.FC = () => {
+type Props = {
+  isNavCollapsed: boolean;
+};
+
+export const Sidebar: React.FC<Props> = ({ isNavCollapsed }) => {
+  // TODO: 開いている間はクラスにcollapsingを、開き終わったらshowを付与する
   return (
-    <S_Sidebar id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+    <S_Sidebar
+      id="sidebarMenu"
+      className={`${isNavCollapsed ? "collapse" : ""} col-md-3 col-lg-2 d-md-block bg-light sidebar`}
+    >
       <div className="position-sticky pt-3">
         <ul className="nav flex-column">
           <li className="nav-item">
@@ -94,7 +102,7 @@ const S_Sidebar = styled.nav`
   left: 0;
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 
   @media (max-width: 767.98px) {
     top: 5rem;

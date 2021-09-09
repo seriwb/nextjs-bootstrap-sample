@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ./
+    image: nextjs-boostrap-sample/web
+    container_name: nextjs-boostrap-sample_web
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/nextjs-boostrap-sample:cached
+      - yarn-cache:/usr/local/share/.cache/yarn/v6
+    command: bash
+    tty: true
+    working_dir: /nextjs-boostrap-sample
+    env_file:
+      - ./.env.local
+    networks:
+      - nextjs-boostrap-sample-network
+
+volumes:
+  yarn-cache:
+
+networks:
+  nextjs-boostrap-sample-network:
+    driver: bridge

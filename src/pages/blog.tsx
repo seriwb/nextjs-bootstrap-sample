@@ -1,6 +1,7 @@
-import { Layout } from "../components/layouts/blog";
 import styled from "styled-components";
 import { NextPage } from "next";
+
+import { Layout } from "../components/layouts/blog";
 import * as application from "../constants/application";
 
 const BlogPage: NextPage = () => {

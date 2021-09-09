@@ -8,7 +8,7 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "prettier/@typescript-eslint"
+    "next"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -28,13 +28,20 @@
         "semi": true,
         "printWidth": 120,
         "trailingComma": "all",
+        "singleQuote": false,
         "tabWidth": 2
       }
     ],
     "react/display-name": ["off"],
-    "react/prop-types": ["error", { "skipUndeclared": true }],
+    "react/prop-types": ["error", { "skipUndeclared": true, "ignore": ["children"] }],
+    "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": ["off"],
     // "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
-    "no-irregular-whitespace": ["off"]
+    "no-irregular-whitespace": ["off"],
+    // for developing next build
+    "@typescript-eslint/no-empty-interface": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }

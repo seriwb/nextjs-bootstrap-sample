@@ -1,7 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+interface Props {
+  isNavCollapsed: boolean;
+  handleNavCollapse: (res: React.BaseSyntheticEvent) => void;
+}
 
-export const Header: React.FC = () => {
+export const Header: React.FC<Props> = ({ isNavCollapsed, handleNavCollapse }) => {
   return (
     <>
       <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
@@ -14,8 +18,9 @@ export const Header: React.FC = () => {
           data-bs-toggle="collapse"
           data-bs-target="#sidebarMenu"
           aria-controls="sidebarMenu"
-          aria-expanded="false"
+          aria-expanded={!isNavCollapsed}
           aria-label="Toggle navigation"
+          onClick={handleNavCollapse}
         >
           <span className="navbar-toggler-icon"></span>
         </S_SidebarButton>

@@ -1,8 +1,9 @@
-import { Layout } from "../components/layouts/dashboard";
 import styled from "styled-components";
 import { NextPage } from "next";
 import { Calendar } from "react-feather";
 import { Line } from "react-chartjs-2";
+
+import { Layout } from "../components/layouts/dashboard";
 import * as application from "../constants/application";
 
 const DashboardPage: NextPage = () => {

@@ -1,6 +1,7 @@
-import { Layout } from "../components/layouts/signin";
 import styled from "styled-components";
 import { NextPage } from "next";
+
+import { Layout } from "../components/layouts/signin";
 import * as application from "../constants/application";
 
 const SigninPage: NextPage = () => {
@@ -23,7 +24,13 @@ const SigninPage: NextPage = () => {
         <label htmlFor="inputPassword" className="visually-hidden">
           Password
         </label>
-        <S_PasswordForm type="password" id="inputPassword" className="form-control" placeholder="Password" required={true} />
+        <S_PasswordForm
+          type="password"
+          id="inputPassword"
+          className="form-control"
+          placeholder="Password"
+          required={true}
+        />
         <S_Checkbox className="checkbox mb-3">
           <label>
             <input type="checkbox" value="remember-me" /> Remember me
